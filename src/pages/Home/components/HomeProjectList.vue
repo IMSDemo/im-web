@@ -1,4 +1,6 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { IconMore, IconShareInternal, IconThumbUp } from '@arco-design/web-vue/es/icon'
+</script>
 
 <template>
   <a-list>
@@ -17,11 +19,26 @@
         </template>
       </a-list-item-meta>
       <template #actions>
-        <icon-edit />
-        <icon-delete />
+        <span class="icon-hover"> <IconThumbUp /> </span>
+        <span class="icon-hover"> <IconShareInternal /> </span>
+        <span class="icon-hover"> <IconMore /> </span>
       </template>
     </a-list-item>
   </a-list>
 </template>
 
-<style scoped></style>
+<style scoped>
+.icon-hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  transition: all 0.1s;
+}
+
+.icon-hover:hover {
+  background-color: rgb(var(--gray-2));
+}
+</style>

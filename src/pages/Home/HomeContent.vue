@@ -1,6 +1,7 @@
 <script lang="ts" setup>
-import HomeList from '@/pages/Home/components/HomeList.vue'
-import HomeListHeader from '@/pages/Home/components/HomeListHeader.vue'
+import HomeProject from '@/pages/Home/components/HomeProject.vue'
+import HomeMember from '@/pages/Home/components/HomeMember.vue'
+import HomeSetting from '@/pages/Home/components/HomeSetting.vue'
 </script>
 
 <template>
@@ -8,30 +9,25 @@ import HomeListHeader from '@/pages/Home/components/HomeListHeader.vue'
     <a-tab-pane key="1">
       <template #title>
         <icon-calendar />
-        Tab 1
+        团队项目
       </template>
-      <a-layout style="height: 400px">
-        <a-layout-header>
-          <home-list-header />
-        </a-layout-header>
-        <a-layout-content>
-          <home-list />
-        </a-layout-content>
-      </a-layout>
+      <home-project />
     </a-tab-pane>
     <a-tab-pane key="2">
       <template #title>
         <icon-clock-circle />
-        Tab 2
+        成员/权限
       </template>
-      Content of Tab Panel 2
+      <a-layout>
+        <home-member />
+      </a-layout>
     </a-tab-pane>
     <a-tab-pane key="3">
       <template #title>
         <icon-user />
-        Tab 3
+        团队设置
       </template>
-      Content of Tab Panel 3
+      <home-setting />
     </a-tab-pane>
   </a-tabs>
 </template>
