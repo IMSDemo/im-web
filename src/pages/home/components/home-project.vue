@@ -1,12 +1,11 @@
 <script lang="ts" setup>
-import HomeListHeader from '@/pages/Home/components/HomeProjectHeader.vue'
-import HomeList from '@/pages/Home/components/HomeProjectList.vue'
+import HomeList from '@/pages/home/components/home-project-list.vue'
 </script>
 
 <template>
   <a-card :bordered="false" title="Arco Card">
     <template #title>
-      <home-list-header />
+      <a-input-search :style="{ width: '160px' }" placeholder="搜索" />
     </template>
     <template #extra>
       <a-space>

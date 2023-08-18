@@ -1,5 +1,10 @@
 <script lang="ts" setup>
 import { IconMore, IconShareInternal, IconThumbUp } from '@arco-design/web-vue/es/icon'
+import router from '@/router'
+
+const toInterface = () => {
+  router.push({ path: '/http/http' })
+}
 </script>
 
 <template>
@@ -8,6 +13,7 @@ import { IconMore, IconShareInternal, IconThumbUp } from '@arco-design/web-vue/e
       <a-list-item-meta
         description="Beijing ByteDance Technology Co., Ltd. is an enterprise located in China."
         title="Beijing Bytedance Technology Co., Ltd."
+        @click="toInterface"
       >
         <template #avatar>
           <a-avatar shape="square">
