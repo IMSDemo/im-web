@@ -1,14 +1,19 @@
 <script lang="ts" setup>
-import { IconMore, IconShareInternal, IconThumbUp } from '@arco-design/web-vue/es/icon'
+import { IconMore, IconShareInternal, IconThumbUp } from '@arco-design/web-vue/es/icon';
+import router from '@/router';
+
+const props = defineProps({
+  teamList: Object
+});
+const toInterface = ({ key }: { key: string }) => {
+  router.push({ path: `/interface/${key}/http` });
+};
 </script>
 
 <template>
   <a-list>
-    <a-list-item v-for="idx in 4" :key="idx">
-      <a-list-item-meta
-        description="Beijing ByteDance Technology Co., Ltd. is an enterprise located in China."
-        title="Beijing Bytedance Technology Co., Ltd."
-      >
+    <a-list-item v-for="project in props.teamList" :key="project.key">
+      <a-list-item-meta :title="project.name" @click="toInterface(project)">
         <template #avatar>
           <a-avatar shape="square">
             <img

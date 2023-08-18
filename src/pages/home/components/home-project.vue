@@ -1,12 +1,17 @@
 <script lang="ts" setup>
-import HomeListHeader from '@/pages/Home/components/HomeProjectHeader.vue'
-import HomeList from '@/pages/Home/components/HomeProjectList.vue'
+import HomeList from '@/pages/home/components/home-project-list.vue';
+import { toRef } from 'vue';
+
+const props = defineProps({
+  teamInfo: Object
+});
+const teamList = toRef(props?.teamInfo?.projectList);
 </script>
 
 <template>
   <a-card :bordered="false" title="Arco Card">
     <template #title>
-      <home-list-header />
+      <a-input-search :style="{ width: '160px' }" placeholder="搜索" />
     </template>
     <template #extra>
       <a-space>
@@ -14,7 +19,7 @@ import HomeList from '@/pages/Home/components/HomeProjectList.vue'
         <a-button type="primary">新建项目</a-button>
       </a-space>
     </template>
-    <home-list />
+    <home-list :teamList="teamList" />
   </a-card>
 </template>
 
