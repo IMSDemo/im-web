@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { reactive } from 'vue'
+import { reactive } from 'vue';
 
 const data = reactive([
   {
@@ -23,7 +23,7 @@ const data = reactive([
     power: '31 Park Road, London',
     email: 'kevin.sandra@example.com'
   }
-])
+]);
 </script>
 
 <template>
@@ -43,7 +43,7 @@ const data = reactive([
       <a-table-column data-index="email" title="邮箱"></a-table-column>
       <a-table-column data-index="power" title="团队权限">
         <template #cell="{ record }">
-          <a-tag :color="true ? 'gold' : 'red'">{{ record.power }}</a-tag>
+          <a-tag :color="'gold'">{{ record.power }}</a-tag>
         </template>
       </a-table-column>
       <a-table-column data-index="edit" title="最近修改" width="100"></a-table-column>
