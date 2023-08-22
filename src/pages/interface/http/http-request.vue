@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import RequestDoc from '@/pages/interface/http/components/request-doc.vue'
+import RequestDoc from '@/pages/interface/http/components/request-doc.vue';
 </script>
 
 <template>

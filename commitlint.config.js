@@ -28,4 +28,4 @@ module.exports = {
     'scope-empty': [2, 'never'],
     'subject-empty': [2, 'never']
   }
-}
+};

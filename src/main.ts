@@ -1,14 +1,14 @@
-import { createApp } from 'vue'
-import { createPinia } from 'pinia'
+import { createApp } from 'vue';
+import { createPinia } from 'pinia';
 
-import ArcoVue from '@arco-design/web-vue'
-import App from './App.vue'
-import '@arco-design/web-vue/dist/arco.css'
-import router from './router'
+import ArcoVue from '@arco-design/web-vue';
+import App from './App.vue';
+import '@arco-design/web-vue/dist/arco.css';
+import router from './router';
 
-const app = createApp(App)
+const app = createApp(App);
 
-app.use(createPinia())
-app.use(router).use(ArcoVue)
+app.use(createPinia());
+app.use(router).use(ArcoVue);
 
-app.mount('#app')
+app.mount('#app');

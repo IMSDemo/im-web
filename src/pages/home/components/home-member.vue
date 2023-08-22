@@ -1,9 +1,9 @@
 <script lang="ts" setup>
-import HomeMemberTable from '@/pages/home/components/home-member-table.vue'
+import HomeMemberTable from '@/pages/home/components/home-member-table.vue';
 
-const memberNum = 2
-const visitorNum = 0
-const otherNum = 2
+const memberNum = 2;
+const visitorNum = 0;
+const otherNum = 2;
 </script>
 
 <template>

@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import DirectoryRequest from '@/pages/interface/http/components/directory-request.vue'
-import DirectoryDoc from '@/pages/interface/http/components/directory-doc.vue'
+import DirectoryRequest from '@/pages/interface/http/components/directory-request.vue';
+import DirectoryDoc from '@/pages/interface/http/components/directory-doc.vue';
 </script>
 
 <template>

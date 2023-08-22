@@ -1,10 +1,10 @@
 <script lang="ts" setup>
-import { ref } from 'vue'
+import { ref } from 'vue';
 
 const handleSelect = (v) => {
-  console.log(v)
-}
-const expandedKeys = ref([])
+  console.log(v);
+};
+const expandedKeys = ref([]);
 
 const data = [
   {
@@ -74,7 +74,7 @@ const data = [
     address: '62 Park Road, London',
     email: 'william.smith@example.com'
   }
-]
+];
 </script>
 
 <template>

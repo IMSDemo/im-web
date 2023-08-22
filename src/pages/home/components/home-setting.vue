@@ -1,17 +1,17 @@
 <script lang="ts" setup>
-import { ref } from 'vue'
+import { ref } from 'vue';
 
-const visible = ref(false)
+const visible = ref(false);
 
 const handleClick = () => {
-  visible.value = true
-}
+  visible.value = true;
+};
 const handleOk = () => {
-  visible.value = false
-}
+  visible.value = false;
+};
 const handleCancel = () => {
-  visible.value = false
-}
+  visible.value = false;
+};
 </script>
 
 <template>

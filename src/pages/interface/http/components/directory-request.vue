@@ -1,14 +1,14 @@
 <script lang="ts" setup>
-import { reactive, ref } from 'vue'
+import { reactive, ref } from 'vue';
 
-const selectedKeys = ref(['Jane Doe', 'Alisa Ross'])
+const selectedKeys = ref(['Jane Doe', 'Alisa Ross']);
 
 const rowSelection = reactive({
   type: 'checkbox',
   showCheckedAll: true,
   onlyCurrent: false
-})
-const pagination = { pageSize: 5 }
+});
+const pagination = { pageSize: 5 };
 
 const columns = [
   {
@@ -27,7 +27,7 @@ const columns = [
     title: 'Email',
     dataIndex: 'email'
   }
-]
+];
 const data = reactive([
   {
     key: '1',
@@ -100,7 +100,7 @@ const data = reactive([
     address: '62 Park Road, London',
     email: 'william.smith@example.com'
   }
-])
+]);
 </script>
 
 <template>
